@@ -11,43 +11,46 @@
 
 <body>
 
-	<audio src="/music/good_enough.mp3" controls>
-	</audio>
+<div class="container">			
 
-	<div class="container">
-		<h1>Fantasy RPG Game</h1>
-		<div id="characterSelection">
+	<div class="container" id="display">
+		<h1 id="first-heading">Fantasy RPG Game</h1>
+		<h2 id="second-heading">Choose A Hero To Begin!</h2>
+		<div id="heroSelection">
         </div>
 		
 		<div class="col-lg-6 pull-left">
-			<h2>Your Character</h2>
-			<div id="character">
+			<h2>Your Hero</h2>
+			<div id="hero">
 		    </div>
 			
 			<h2></h2>
 		    <div id="fightSection">
-			<button id="attack" class="btn btn-danger">Attack!</button>
+			<button type="fightButton" id="attack" class="col-lg-12 btn btn-danger btn-lg btn-block">Attack!</button>
 			</div>
 			
 			<div id="status">
 			</div>
 
-			<button id="restart" class="btn btn-success">Restart</button>
-	    </div>
+			<button id="restartButton" id="restart" class="col-lg-12 btn btn-success btn-lg btn-block">Restart</button>
+			</div>
 	
 	    <div class="col-lg-6 pull-right">
-			<h2>Defender</h2>
-				<div id="defender">
+			<h2>Opponents</h2>
+				<div id="opponent">
 				</div>
-			<h2>Enemies</h2>
 			
-			<div id="defenderArea">
+			<div id="opponentArea">
 
 			</div>
 		</div>
 		
 	</div>
+
+</div>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="game.js"></script>
+	<script>
+	</script>
 </body>
 </html>
